@@ -1,0 +1,21 @@
+{
+    "molotov": {
+        "tests": {
+            "big": {
+                "duration": 120,
+                "exception": true,
+                "processes": 5,
+                "scenario": "loadtest.py",
+                "workers": 100
+            },
+            "small": {
+                "console": true,
+                "duration": 120,
+                "exception": true,
+                "processes": 1,
+                "scenario": "loadtest.py",
+                "workers": 5
+            }
+        }
+    }
+}
