@@ -1,3 +1,7 @@
+"""
+Each "worker" pick a scenario randomly, given the weights and run it.
+Then start again.
+"""
 import molotov
 
 
@@ -8,7 +12,7 @@ async def scenario_one(session):
 
 
 @molotov.scenario(weight=20)
-async def scenario_one(session):
+async def scenario_two(session):
     async with session.get('http://localhost:8000/data.json') as resp:
         data = await resp.json()
         assert 'ok' in data
