@@ -1,3 +1,7 @@
+single:
+	bin/molotov --max-runs 1 -s scenario_one
+	bin/molotov --max-runs 1 -s scenario_two
+
 load:
 	bin/molotov --workers 10 --processes 4
 
