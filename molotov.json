@@ -14,7 +14,9 @@
                 "exception": true,
                 "processes": 1,
                 "scenario": "loadtest.py",
-                "workers": 5
+                "workers": 5,
+                "verbose": true,
+                "exception": true
             }
         }
     }
